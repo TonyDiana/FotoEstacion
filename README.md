@@ -27,11 +27,14 @@ No se ofrece ninguna línea de asesoramiento o ayuda al montaje del mismo, de la
 
 No se ofrece ninguna garantía ni soporte sobre este software. En caso de instalarlo, el usuario acepta el mismo libre de cargas, pero sin derechos a reclamos, indemnizaciones o ayuda por parte del equipo desarrollador.
 
+## Web del proyecto
+
+https://tonydiana.github.io/imagen/
+
 ## Información
 
 ```comentario
-Versión:    3.0
-web:        https://tonydiana.github.io/FotoEstacion/
+Versión:    Beta 1
 Autor:      Tony Diana
 Licencia:   Atribución, No Comercial, Compartir Igual, (CC BY-NC-SA)
 Lenguajes:  Python, C++, Arduino, HTML, javascript, CSS, etc...
@@ -51,15 +54,9 @@ El versionado sigue las reglas tradicionales de:
                  diciembre del año 2020.
 ```
 
-## Ramas
+## Sobre este repositorio
 
-```Ramas
-master  Rama estable, esta es la que se tiene que instalar
-
-Beta    Rama destinada a los Beta tester, puede ser inestable u ofrecer
-        malos funcionamientos
-
-```
+La rama `master` es la única que garantiza un buen funcionamiento.
 
 ## Dependencias
 
@@ -67,35 +64,25 @@ Estarán resueltas en el proceso de instalación, el usuario final no debe preoc
 
 ## Procedimiento de instalación
 
-Sin definir por el momento.
+### Instalación normal
+Teclear en una terminal:
 
-## Archivos en carpeta raíz
+curl https://raw.githubusercontent.com/TonyDiana/imagen/master/img/conf/master.sh | bash
 
-Todos los archivos que no están en esta lista deben ser ignorados, pero no deben ser borrados en ningún caso. La instalación se encargará de ofrecer los archivos mínimos y necesarios para el normal funcionamiento y evitará desperdiciar el disco del usuario con archivos innecesarios, sin embargo, algunos de ellos son necesarios aunque no se describa su uso.
 
-```comentario
-CONTRIBUTING.rst    Instrucciones para contribuir como Beta Tester.
-index.html          Lanzador del manual Off Line.
-LICENSE.rst         Resumen de la licencia (Español).
-ROADMAP.rst         Lista de cambios en proceso y en fase de estudio.
-README.md           Este archivo que está leyendo.
-```
+### Instalación Beta Tester
+Teclear en una terminal:
 
-## Carpetas de la raíz
+NO INSTALAR LA VERSIÓN BETA SI NO HA SIDO AUTORIZADO COMO BETA TESTER, LA VERSIÓN BETA NO SIEMPRE ES ESTABLE Y PUEDE DAÑAR SU EQUIPO.
 
-Todas la carpetas que no están en esta lista deben ser ignoradas, pero no deben ser borradas en ningún caso. La instalación se encargará de ofrecer las carpetas mínimas y necesarias para el normal funcionamiento y evitará desperdiciar el disco del usuario con carpetas innecesarias, sin embargo, algunas de ellas son necesarias aunque no se describa su uso.
+curl https://raw.githubusercontent.com/TonyDiana/imagen/beta/img/conf/beta.sh | bash
 
-```comentario
-bin     Binarios y lanzadores de la solución. No manipular si no se tiene un
-        completo y claro conocimiento de lo que se está realizando.
 
-manual  Manual Off Line.
+Si quiere acceder rápidamente desde su Raspberry a este repositorio, puede hacerlo a través del enlace:
 
-rec     Recursos varios, archivos sueltos, documentos interesantes para el
-        usuario final, puede consultarlos o eliminar la carpeta si lo desea,
-        aunque es posible que se vuelva a instalar si se realiza una
-        actualización de la versión.
+http://bit.ly/imagen_td
 
-temas   Temas empleados por la solución. Consulte la documentación sobre cómo
-        puede personalizar un tema.
-```
+
+## Procedimiento de actualización
+
+La aplicación se actualiza automáticamente cuando se inicia la unidad, no hay que realizar ningún proceso adicional, tanto para los usuarios normales como para los Beta Tester.

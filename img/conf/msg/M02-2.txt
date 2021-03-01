@@ -1,0 +1,28 @@
+Configuremos los interfaces:
+
+El proceso es muy sencillo:
+
+- Vaya a la opción "3 Interface Options" y dentro de ese menú acceda a la
+  opción "P3 VNC" para activar la conexión VNC, la cual le permitirá acceder
+  a su Raspberry desde el celular o desde otra computadora.
+
+- Si desea conectarse a su Raspberry por protocolo SSH, será necesario que
+  posteriormente regrese a la opción "3 Interface Options" y active la opción
+  "P2 SSH". Este paso es muy recomendable para poder configurar su Raspberry
+  en el futuro sin tener que conectarla a un monitor, pero se necesitan ciertos
+  conocimientos en Linux para poder aprovecharlo.
+  Si no es su caso, puede omitir este paso sin problema alguno, si lo
+  necesitamos en el futuro lo podrá hacer entonces desde la conexión VNC.
+
+- Volvamos al interface (3 Interface Options) y active la opción del SPI en el
+  sub menú "P4 SPI".
+
+- Si ha montado la unidad con la batería recomendada, no es necesario este paso
+  ya que al instalar la batería (lo haremos muy pronto) se configurará
+  automáticamente. Si no va a utilizar la batería recomendada, regrese al menú
+  del interface (3 Interface Options) y active la opción del I2C en el sub menú
+  "P5 I2C".
+
+Recuerde, "3 Interface Options" y luego los sub menús P2, P3, P4 y P5.
+
+¡¡ PROCEDAMOS !!

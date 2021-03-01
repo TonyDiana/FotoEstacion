@@ -1,0 +1,20 @@
+.. index:: Café
+
+Origen de la idea
+=================
+
+Los mejores planes del mundo surgen frente a un café. En las noches de vigilia que anteceden a los días importantes, el café es uno de los invitados innegables, omnipresente, antecesor de buenas y malas noticias, porque el café no sabe distinguir las finalidades para las que se le requiere, simplemente ofrece su aroma y sabor a todo ser (no solo humano) que desea deleitarse con sus aceites.
+
+El café ha sido, a lo largo de la historia, un brebaje que ha ofrecido sus bondades más allá de toda duda. Seguramente el café ha sido el acompañante silencioso pero fiel de generales, estudiantes y profesores, empresarios y un sinfín de personas y personalidades que, dubitativos ante sus últimas decisiones y amparados en el manto de la soledad, se han permitido confesar sus temores y dudas ante este único testigo (puesto que su silencio está garantizado) y, lejos del enturbiamiento del la mente y alma que ofrecen otros fluidos, el café entona el cuerpo y da, a la vez que respiro y alivio, una extraña fortaleza que, difícil de explicar, solo puede ser comprendida por aquellos que hemos sucumbido ampliamente a sus encantos.
+
+No es de extrañar que en las cafeterías universitarias mucho más que en las aulas, surjan algunos de los mejores proyectos que la humanidad y la institución haya ofrecido y, siendo Costa Rica un país cafetalero, la presencia del dios negro no podría ser menos que exigida cuando de tomar decisiones se trata.
+
+En cierta ocasión, seguramente frente a un café, Irina Yébrenes, directora de la Escuela de Animación, comentó frente a la directora de fotografía de la institución (otra de las grandes amantes del café del claustro), lo interesada que estaba e interesante que podría ser realizar unas fotografías de producto, concretamente, de las esculturas que realizan los estudiantes de animación, pero con una particularidad: Que dichas fotografías pudiesen ser interactivas y que pudiesen rotar frente al espectador a voluntad de este, así las imágenes permitirían ver todos y cada uno de los detalles de dichas esculturas.
+
+El café, que es un siniestro duende, susurró en el oído de la directora, que seguramente Tony Diana, docente de la universidad, estaría interesado en el proyecto. En ese momento mientras ella tomaba su café enviaba un email a Tony, el cual saboreaba el suyo propio, porque el café solo quiere relaciones entre personas que lo consumen, por eso susurró al oído su nombre y no otro, porque seguramente el vínculo del café los llevaba a unir mentes mientras los aromas se esparcían y se encontraban y conocían en el ambiente.
+
+Nuevos cafés debieron libarse para comentar ideas, inquietudes posibilidades y pruebas, en una orgía de emails, risas ilusiones y cafeses consumidos y derramados (que al café esto no importa demasiado, pero sin abusar, no vaya ud a creer), para buscar ideas y llegar a conclusiones, en la que la primera quiso ser, buscar una solución comercial que ofreciese la posibilidad de realizar las fotografías necesarias para este curioso viaje.
+
+El café es celoso; solamente en raras ocasiones quiere crear vínculos con su primo lejano y más verde (comprenderán que no pueda aquí citar su monosilábico nombre), quizás por eso y, porque la primera solución comercial que se encontrase viniese de una isla al norte de Europa, donde el café no es bien recibido, el café decidió vengarse e inspirar a todos los implicados que era mejor realizar una solución propia, con el beneficio adicional de no tener que destinar tan abultados recursos como la solución británica proponía.
+
+Y ahora, ya sin importar si existían otras soluciones cafeteras, el café inspiró que se crease una idea nueva, propia, sin vínculos comerciales. Afortunadamente otros cafeteros, bien directos bien de productos derivados y basados en nuestro astuto amigo, se unieron al proyecto y, seguramente, al final del mismo, brindaron no con champagne, que es demasiado galo, sino con granos molidos y aceitados que ofrecieron tanto caricias a los paladares como efluvios malignos al ambiente, en busca de nuevos cafeteros.

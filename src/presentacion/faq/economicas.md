@@ -1,0 +1,38 @@
+# Preguntas de índole económico
+
+
+**¿Debo pagar para utilizar esta solución?**
+
+No, no es necesario pagar para utilizar Foto Estación, aunque sí tendrás que comprar algunos aparatos para utilizarla.
+
+
+**¿Por qué es gratis?**
+
+Porque nunca nos hemos planteado vender la solución. Si la vendiésemos deberíamos montar una empresa para ello. NO ha sido nuestro propósito nunca.
+
+
+**He leído la licencia y dice que las universidades privadas no pueden utilizarla. Yo soy estudiante o profesor de una universidad privada ¿No puedo utilizarla?**
+
+¡¡ Claro que puedes !!
+
+Lo que no se puede es vender cursos o talleres donde se monte esta solución y se cobre al usuario final. Si no ganamos dinero nosotros ¿Por qué debería ganar una institución que ya está cobrando?
+
+¡¡ Sería injusto !!
+
+Pero tú si puedes montarlo y usarlo libremente.
+
+
+**¿Puedo usarlo para mi trabajo comercial?**
+
+- Si tu trabajo comercial es hacer fotografías, puedes usarlo.
+
+- Si tu trabajo comercial es ofrecer soluciones de software, hardware, mecánica, electrónica... y quieres utilizar esta solución para ofrecerla a tus clientes finales, deberás de llegar a un acuerdo comercial con nosotros.
+
+- Si alguien te solicita ayuda comercial para montar la solución (horas de programación, electrónica, montar Hardware, etc) sí puedes hacerlo, cobrando por tu trabajo como otro trabajo más, pero no puedes ofrecerte como asesor oficial o no oficial, sólo se permite que te subcontraten el trabajo de montaje. No puedes anunciarte como oferente para la solución Foto Estación, igual que no lo puedes hacer con otras marcas con las que no tienes convenio comercial.
+
+- Si vas a utilizar esta solución como herramienta de trabajo personal, no tienes límites en cuanto a cómo utilizarla.
+
+
+**¿Puedo aportar económicamente al proyecto para que se mantenga en el tiempo y se mejore?**
+
+Lo estamos estudiando, de momento no está contemplado aceptar aportes económicos porque tampoco se está ofreciendo un calendario de mejoras o entregas futuras.

@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAdjustment" id="Rango Alto Sensor">
+    <property name="lower">1</property>
+    <property name="upper">100</property>
+    <property name="value">24</property>
+    <property name="step_increment">0.10000000000000001</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Ancho Sensor">
+    <property name="lower">1</property>
+    <property name="upper">100</property>
+    <property name="value">36</property>
+    <property name="step_increment">0.10000000000000001</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Desconexión">
+    <property name="lower">1</property>
+    <property name="upper">30</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Desconexión1">
+    <property name="lower">1</property>
+    <property name="upper">30</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Espejo">
+    <property name="lower">1</property>
+    <property name="upper">2000</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Flash">
+    <property name="lower">1</property>
+    <property name="upper">2500</property>
+    <property name="step_increment">50</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango Shutterlag">
+    <property name="lower">1</property>
+    <property name="upper">500</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="Rango ajuste exposición">
+    <property name="lower">-5</property>
+    <property name="upper">5</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkListStore" id="factores_CoC">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">0</col>
+        <col id="1" translatable="yes">gggg</col>
+      </row>
+      <row>
+        <col id="0">0</col>
+        <col id="1" translatable="yes">sfdsffsd</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="iso_ma">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">sdsdfdfs</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="iso_mi">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">sdsdfdfs</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="tipos_camaras">
+    <columns>
+      <!-- column-name id -->
+      <column type="gint"/>
+      <!-- column-name nombre -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="MAIN">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">480</property>
+    <property name="default_height">800</property>
+    <property name="icon">../../olimpo/iconos/baseline_camera_alt_white_18dp.png</property>
+    <property name="decorated">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">15</property>
+        <property name="margin_right">15</property>
+        <property name="margin_top">15</property>
+        <property name="margin_bottom">15</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkStackSwitcher" id="Menú superior">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="icon_size">0</property>
+            <property name="stack">stack</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="Nombre">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="spacing">10</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="label" translatable="yes">Nombre</property>
+                <attributes>
+                  <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="NAME">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="is_focus">True</property>
+                <property name="width_chars">30</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStack" id="stack">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="hhomogeneous">False</property>
+            <property name="vhomogeneous">False</property>
+            <property name="transition_duration">400</property>
+            <property name="transition_type">slide-left-right</property>
+            <child>
+              <object class="GtkGrid" id="_Identidad_">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="row_spacing">10</property>
+                <property name="column_spacing">10</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Tipo</property>
+                    <property name="justify">right</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Comentario</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="COMM">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">30</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="tip_cam">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="model">tipos_camaras</property>
+                    <signal name="changed" handler="stack_identidad_interactivo" swapped="no"/>
+                    <child>
+                      <object class="GtkCellRendererText"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="title" translatable="yes">Identidad</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="_Sensor_">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="row_spacing">10</property>
+                <property name="column_spacing">10</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Todas las unidades en mm</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 16"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Ancho</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="ANCHO">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Ancho Sensor</property>
+                    <property name="climb_rate">0.10000000000000001</property>
+                    <property name="digits">2</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">36</property>
+                    <signal name="value-changed" handler="stack_sensor_interactivo" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Alto</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="ALTO">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Alto Sensor</property>
+                    <property name="climb_rate">0.10000000000000001</property>
+                    <property name="digits">2</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">24</property>
+                    <signal name="value-changed" handler="stack_sensor_interactivo" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkGrid">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="column_spacing">10</property>
+                    <property name="column_homogeneous">True</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="label" translatable="yes">Normal</property>
+                        <property name="justify">center</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="NORMAL">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">False</property>
+                        <property name="double_buffered">False</property>
+                        <property name="editable">False</property>
+                        <property name="width_chars">0</property>
+                        <property name="xalign">0.5</property>
+                        <property name="caps_lock_warning">False</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="label" translatable="yes">Factor</property>
+                        <property name="justify">center</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="FAC_FF">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">False</property>
+                        <property name="double_buffered">False</property>
+                        <property name="editable">False</property>
+                        <property name="width_chars">0</property>
+                        <property name="xalign">0.5</property>
+                        <property name="caps_lock_warning">False</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="label" translatable="yes">Diagonal</property>
+                        <property name="justify">center</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="DIAG">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">False</property>
+                        <property name="double_buffered">False</property>
+                        <property name="editable">False</property>
+                        <property name="width_chars">0</property>
+                        <property name="xalign">0.5</property>
+                        <property name="caps_lock_warning">False</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="height">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="label" translatable="yes">CoC</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBox" id="fac_CoC">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="model">factores_CoC</property>
+                        <property name="wrap_width">25</property>
+                        <signal name="changed" handler="stack_sensor_interactivo" swapped="no"/>
+                        <child>
+                          <object class="GtkCellRendererText"/>
+                          <attributes>
+                            <attribute name="text">1</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="COC">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">True</property>
+                        <property name="double_buffered">False</property>
+                        <property name="editable">False</property>
+                        <property name="width_chars">15</property>
+                        <property name="xalign">0.5</property>
+                        <property name="caps_lock_warning">False</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">mín</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">MAX</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 12"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="iso_min">
+                    <property name="width_request">150</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="model">iso_mi</property>
+                    <child>
+                      <object class="GtkCellRendererText"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="iso_max">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="model">iso_ma</property>
+                    <child>
+                      <object class="GtkCellRendererText"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0</property>
+                    <property name="margin_top">20</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0</property>
+                    <property name="margin_top">20</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">7</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">ISO</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 24"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">5</property>
+                    <property name="height">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Ajuste o compensación de la
+exposición en tercios</property>
+                    <property name="justify">right</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 10"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">8</property>
+                    <property name="width">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="AJUSTE">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango ajuste exposición</property>
+                    <property name="climb_rate">1</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">36</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="title" translatable="yes">Sensor</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="_Tiempos_">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="row_spacing">10</property>
+                <property name="column_spacing">10</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Shutterlag</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="SHUTTER">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Shutterlag</property>
+                    <property name="climb_rate">0.10000000000000001</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">36</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Sicro Flash</property>
+                    <property name="justify">right</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="FLASH">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Flash</property>
+                    <property name="climb_rate">1</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Desconexión activada</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="DESCO">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="halign">end</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0</property>
+                    <property name="margin_top">40</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Minutos</property>
+                    <property name="justify">right</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="DESCO_T">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Desconexión</property>
+                    <property name="climb_rate">1</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">36</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSeparator">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="opacity">0</property>
+                    <property name="margin_top">40</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="ESPEJO">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="halign">end</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="ESP2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Levantamiento Espejo</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="ESP3">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Milisegundos</property>
+                    <property name="justify">right</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Ubuntu Bold 14"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">7</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="ESPEJO_T">
+                    <property name="height_request">45</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="width_chars">7</property>
+                    <property name="max_width_chars">7</property>
+                    <property name="text" translatable="yes">36,00</property>
+                    <property name="xalign">0.5</property>
+                    <property name="primary_icon_sensitive">False</property>
+                    <property name="secondary_icon_sensitive">False</property>
+                    <property name="input_purpose">number</property>
+                    <property name="adjustment">Rango Espejo</property>
+                    <property name="numeric">True</property>
+                    <property name="wrap">True</property>
+                    <property name="update_policy">if-valid</property>
+                    <property name="value">36</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">7</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="title" translatable="yes">Tiempos</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="Menú inferior">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">100</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="_bt_exit_">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="bt_exit" swapped="no"/>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="pixbuf">../../olimpo/iconos/baseline_exit_to_app_white_18dp.png</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="_bt_help_">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="bt_help" swapped="no"/>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="pixbuf">../../olimpo/iconos/baseline_help_center_white_18dp.png</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="_bt_ok_">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="bt_ok" swapped="no"/>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="pixbuf">../../olimpo/iconos/baseline_thumb_up_white_18dp.png</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,10 @@
+# --- Python
+*.pyc
+
+# --- GUI
+*.glade#
+*.glade~
+
+# --- Base de datos
+img/src/bd/
+img/src/conf.yml
